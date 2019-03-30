@@ -1,6 +1,15 @@
 body {
-  background-color: lightgrey;
+  background-color:white;
 }
-#show-container {
-  float: right;
+
+#contact:hover {
+  text-decoration: underline;
+}
+#contact {
+  cursor: pointer;
+  color: darkblue;
+}
+.showContact {
+  color: darkblue;
+  font-family: sans-serif;
 }

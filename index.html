@@ -2,57 +2,50 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+    <link href="bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" >
     <script type="text/javascript" src="addressBook.js"></script>
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="styles.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <title></title>
   </head>
-  <body class=container >
-      <div id="contact-panel" class="panel">
-        <form id="address" class="form-horizontal">
+  <body>
+      <div class=container>
+        <form id="Address">
            <h1>My Address Book</h1>
            <div class="form-group">
                <label>
-                  First Name <br><input type="text" name="person" id="fname" placeholder="Cook" class="form-control" />
+                  <span class="text-info"><big>First Name</big> </span><br><input type="text" name="person" id="fname" placeholder="first name" class="form-control" />
                </label><br><br>
                <label >
-                  Last Name <br><input type="text" name="person" id="lname" placeholder="John" class="form-control"/>
+                  <spa class="text-info"><big>Last Name</big> </span><br><input type="text" name="person" id="lname" placeholder="last name" class="form-control"/>
                </label><br><br>
                <label>
-                   Phone Number <br><input type="text" name="phone" id="tel" class="form-control"/>
+                   <span class="text-info"><big>Phone Number</big></span><br><input type="text" name="phone" id="tel" class="form-control"/>
                </label><br><br>
                <label>
-                   Email <br><input type="text" name="email" id="email" placeholder="john@example.com" class="form-control"/>
+                   <span class="text-info">Email</span><br><input type="text" name="email" id="email" class="form-control"/>
                </label> <br><br>
                <label>
-                  Street <br><input type="text" name="street" id="street" class="form-control"/>
+                  <span class="text-info">Street</span><br><input type="text" name="street" id="street" class="form-control"/>
                </label><br><br>
                <label>
-                  City <br><input type="text" name="city" id="city" class="form-control"/>
+                  <span class="text-info">City</span><br><input type="text" name="city" id="city" class="form-control"/>
                </label><br><br>
                <label>
-                  State <br><input type="text" name="state" id="state" class="form-control"/>
+                  <span class="text-info">State</span><br><input type="text" name="state" id="state" class="form-control"/>
                </label><br><br>
            </div>
            <div><br>
-               <input class="btn btn-default" type="submit" id="submit" value="Submit" />
-           </div>
+               <input class="btn btn-info btn-lg" type="submit" id="submit" value="Save" />
+            </div>
        </form>
-     </div>
-     <ul id="contact">
+       <ul id="contact">
+       </ul>
+       <div class= "showContact">
 
-     </ul>
-     <div id = "show-contact">
-       <span id="showFName">First Name:</span><br>
-       <span id="showSName">Second Name:</span><br>
-       <span id="showEmail">Email:</span><br>
-       <span id="showTelephone">Telephone:</span><br>
-       <span id="showStreet">Street:</span><br>
-       <span id="showCity">City:</span><br>
-       <span id="showState">State:</span>
-
+       </div>
      </div>
+
    </body>
 </html>
